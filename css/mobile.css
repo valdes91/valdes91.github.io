@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed&family=IBM+Plex+Sans:wght@100;400;700&display=swap");
+@media (max-width: 540px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.15rem;
+  }
+
+  #logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  #main-navbar a {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  #showcase {
+    min-height: 80vh;
+  }
+  #showcase #portrait {
+    height: 275px;
+    width: 275px;
+  }
+
+  .skill-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  #main-navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #main-navbar #logo {
+    display: none;
+  }
+  #main-navbar ul {
+    flex-direction: column;
+  }
+  #main-navbar li {
+    margin: 5px 0;
+  }
+
+  #showcase #portrait {
+    width: 225px;
+    height: 225px;
+  }
+
+  .skill-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #contact #contact-form {
+    width: 300px;
+  }
+}
